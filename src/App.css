@@ -1,3 +1,18 @@
+.hero{
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("https://9to5mac.com/wp-content/uploads/sites/6/2021/09/macbook-air-vs-pro-comparison.jpg?quality=82&strip=all");
+  background-size: cover;
+}
+.hero__h1{
+  font-family: sans-serif;
+  color: white;
+  font-size: 5rem;
+}
 .App {
   text-align: center;
 }

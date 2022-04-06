@@ -5,12 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AuthProvider from './contex/GeneralAuthContext'
 import FirestoreProvider from './contex/GeneralFireStore'
+import CardProvider from './contex/GeneralCart'
+import {BrowserRouter} from 'react-router-dom'
+
 
 ReactDOM.render(
   <React.StrictMode>
     <FirestoreProvider>
           <AuthProvider>
+            <CardProvider>
+            <BrowserRouter>
             <App />
+            </BrowserRouter>
+            </CardProvider>
           </AuthProvider>
     </FirestoreProvider>
   </React.StrictMode>,
